@@ -47,7 +47,7 @@
             </a> 
           </li>
           <li class="nav-item">
-            <a href="<?= site_url('usuarios') ?>" class="nav-link">
+            <a href="<?= site_url('admin/userinfo') ?>" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Usuarios

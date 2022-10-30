@@ -43,7 +43,7 @@ $routes->match(['get', 'post'], 'login', 'UserController::login', ["filter" => "
 
 // Admin routes
 $routes->group("admin", ["filter" => "auth"], function ($routes) {
-    $routes->get('usuarios', 'UserInfoController::index');
+    $routes->get('userinfo', 'UserInfoController::index');
     $routes->get('/', 'admin\AdminController::index');
 
 

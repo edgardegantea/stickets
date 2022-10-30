@@ -14,9 +14,14 @@ class UserInfoController extends ResourceController
      */
     public function index()
     {
-        $users = new UserModel();
+        $users = model(UserModel::class);
 
-        return view('userinfo/index');
+        $data = [
+            'title' => 'Usuarios',
+            'usuarios'  => $users->findAll(),
+        ];
+
+        return view('userinfo/index', $data);
     }
 
     /**
