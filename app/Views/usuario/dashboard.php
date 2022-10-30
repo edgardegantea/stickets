@@ -1,6 +1,6 @@
-<?= $this->extend("editor/admin_template") ?>
+<?= $this->extend("usuario/template/admin_template") ?>
 
-<?= $this->section("body") ?>
+<?= $this->section("content") ?>
 
 <div class="container" style="margin-top:20px;">
     <div class="row">
