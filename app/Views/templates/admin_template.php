@@ -38,9 +38,9 @@
 
 
 
-  <?= $this->include('templates/navbar'); ?>
+  <?= $this->include('admin/template/navbar'); ?>
 
-  <?= $this->include('templates/sidebar'); ?>
+  <?= $this->include('admin/template/sidebar'); ?>
 
 
 

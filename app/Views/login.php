@@ -88,6 +88,8 @@
 
             <!-- <img class="mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
 
+            <h2 class="mb-5">Tickets de soporte</h2>
+
             <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
 
             <div class="form-floating">

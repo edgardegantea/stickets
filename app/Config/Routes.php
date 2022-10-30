@@ -43,7 +43,20 @@ $routes->match(['get', 'post'], 'login', 'UserController::login', ["filter" => "
 
 // Admin routes
 $routes->group("admin", ["filter" => "auth"], function ($routes) {
-    $routes->get("/", "AdminController::index");
+    $routes->get('usuarios', 'UserInfoController::index');
+    $routes->get('/', 'admin\AdminController::index');
+
+
+    // Ruta para testear creación de pdf
+    $routes->get('tickets/pdf', 'admin\TicketController::generarPDF');
+
+    $routes->get('tickets', 'admin\TicketController::index');
+    $routes->get('tickets/new', 'admin\TicketController::new');
+    $routes->post('tickets', 'admin\TicketController::create');
+    $routes->get('tickets/(:num)', 'admin\TicketController::show/$1');
+    $routes->get('tickets/edit/(:num)', 'admin\TicketController::edit/$1');
+    $routes->put('tickets/(:num)', 'admin\TicketController::update/$1');
+    $routes->delete('tickets/(:num)', 'admin\TicketController::delete/$1');
 
 });
 

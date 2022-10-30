@@ -1,6 +1,6 @@
 <?= $this->extend('admin/admin_template'); ?>
 
-<?= $this->renderSection('body'); ?>
+<?= $this->section('body'); ?>
 
 	<h1>Área de información de usuarios</h1>
 

@@ -1,4 +1,4 @@
-<?= $this->extend("admin/admin_template") ?>
+<?= $this->extend("admin/template/admin_template") ?>
 
 <?= $this->section("body") ?>
 
